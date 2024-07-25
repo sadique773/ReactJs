@@ -1,6 +1,7 @@
 import React from 'react'
 
-function card() {
+function card({laptop}) {
+
   return (
     <div class="w-[300px] rounded-md border">
   <img
@@ -10,7 +11,7 @@ function card() {
   />
   <div class="p-4">
     <h1 class="inline-flex items-center text-lg font-semibold">
-      About Macbook  {" "}
+      About {laptop}  {" "}
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"

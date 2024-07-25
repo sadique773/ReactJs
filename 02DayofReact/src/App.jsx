@@ -31,9 +31,10 @@ function App() {
 
 
 
-    <div className=''>
+    <div className='flex justify-around'>
     <button onClick={addValue}
      className='bg-blue-600
+     hover:bg-blue-800
      text-yellow-400
      rounded-md
      m-2
@@ -44,21 +45,27 @@ function App() {
      <br />
      <button
      className='bg-blue-600
+      hover:bg-blue-800
      text-yellow-400
      rounded-md
-     m-1
+     m-2
      p-2'
      onClick={decValue}>Remove Value</button>
 
     </div>
       <h3
       className='bg-pink-500
-      inline-block rounded-xl
+     rounded-xl
       p-3
       m-1
-      text-gray-50'>Current Value:{count}</h3>
+      text-gray-50
+      '><strong>Current Value: </strong>{count}</h3>
       
-    <Card></Card>
+    <div className='flex'>
+    <Card laptop="AsusBook"/>
+    <br />
+    <Card laptop="Vivobook"/>
+    </div>
     </>
   )
 }
